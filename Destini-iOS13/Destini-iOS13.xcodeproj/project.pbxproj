@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CC692A06E22B98E9995E38F /* Pods_Destini_iOS13.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77DA157B68407135C7370F7D /* Pods_Destini_iOS13.framework */; };
 		AD7631D422FC5E7E00C6E71B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7631D322FC5E7E00C6E71B /* AppDelegate.swift */; };
 		AD7631D622FC5E7E00C6E71B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7631D522FC5E7E00C6E71B /* SceneDelegate.swift */; };
 		AD7631D822FC5E7E00C6E71B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7631D722FC5E7E00C6E71B /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		77DA157B68407135C7370F7D /* Pods_Destini_iOS13.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Destini_iOS13.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD7631D022FC5E7E00C6E71B /* Destini-iOS13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Destini-iOS13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD7631D322FC5E7E00C6E71B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD7631D522FC5E7E00C6E71B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +32,8 @@
 		AD7631E922FC64C100C6E71B /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		AD7631EC22FC64E400C6E71B /* StoryBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBrain.swift; sourceTree = "<group>"; };
 		AD7631EE22FC656600C6E71B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B0EC0DBF533B0688820CE7B7 /* Pods-Destini-iOS13.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Destini-iOS13.debug.xcconfig"; path = "Target Support Files/Pods-Destini-iOS13/Pods-Destini-iOS13.debug.xcconfig"; sourceTree = "<group>"; };
+		EB1BFBCA8780EE890EEB7ACA /* Pods-Destini-iOS13.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Destini-iOS13.release.xcconfig"; path = "Target Support Files/Pods-Destini-iOS13/Pods-Destini-iOS13.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,18 +41,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CC692A06E22B98E9995E38F /* Pods_Destini_iOS13.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		88BBE3201E627BBBF405701D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0EC0DBF533B0688820CE7B7 /* Pods-Destini-iOS13.debug.xcconfig */,
+				EB1BFBCA8780EE890EEB7ACA /* Pods-Destini-iOS13.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		93021E10FC59292614F9E74D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77DA157B68407135C7370F7D /* Pods_Destini_iOS13.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AD7631C722FC5E7D00C6E71B = {
 			isa = PBXGroup;
 			children = (
 				AD7631EE22FC656600C6E71B /* README.md */,
 				AD7631D222FC5E7E00C6E71B /* Destini-iOS13 */,
 				AD7631D122FC5E7E00C6E71B /* Products */,
+				88BBE3201E627BBBF405701D /* Pods */,
+				93021E10FC59292614F9E74D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD7631E422FC5E8300C6E71B /* Build configuration list for PBXNativeTarget "Destini-iOS13" */;
 			buildPhases = (
+				0DBE1C4F4503EE47A30262AE /* [CP] Check Pods Manifest.lock */,
 				AD7631CC22FC5E7E00C6E71B /* Sources */,
 				AD7631CD22FC5E7E00C6E71B /* Frameworks */,
 				AD7631CE22FC5E7E00C6E71B /* Resources */,
+				2EA5311A601AF673268F3EF8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,6 +192,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DBE1C4F4503EE47A30262AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Destini-iOS13-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2EA5311A601AF673268F3EF8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Destini-iOS13/Pods-Destini-iOS13-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Destini-iOS13/Pods-Destini-iOS13-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Destini-iOS13/Pods-Destini-iOS13-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AD7631CC22FC5E7E00C6E71B /* Sources */ = {
@@ -318,6 +386,7 @@
 		};
 		AD7631E522FC5E8300C6E71B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0EC0DBF533B0688820CE7B7 /* Pods-Destini-iOS13.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -328,6 +397,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "co.appbrewery.Destini-iOS13";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -335,6 +408,7 @@
 		};
 		AD7631E622FC5E8300C6E71B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB1BFBCA8780EE890EEB7ACA /* Pods-Destini-iOS13.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -345,6 +419,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "co.appbrewery.Destini-iOS13";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
