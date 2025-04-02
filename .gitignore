@@ -1,0 +1,14 @@
+# Xcode build artifacts
+*/build/
+*/DerivedData/
+*/xcuserdata/
+# Swift Package Manager dependencies
+Package.resolved
+# Other
+*.pbxuser
+*.xcconfig
+*.xcodebuild
+*.xcworkspace/xcuserdata/
+*.swiftpm/
+*.ipa
+*.xcuserstate
